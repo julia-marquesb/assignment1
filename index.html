@@ -1,0 +1,223 @@
+<!-- Code created by Julia Marques Batista (200610604)
+ On June 7, 2024 at 9:54 PM
+ Assignment 1 (HTML)-->
+
+ <!-- Step 1: Construct a properly structured HTML document, including a proper DOCTYPE, 
+  character-encoding META tag, and a lang attribute on the HTML start tag.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>    
+<!--Step 2 and 3:
+Structure the page with appropriate page-level sectioning elements (header, main and footer) to construct the main document outline.
+Think of the various pieces of information that you’d need to collect from someone to deliver them a pizza.- -->
+
+
+<main>
+<header><!--Header-->
+    <h1>Masieri's Pizzaria</h1>
+    <br>
+   <h2>The Best Pizza Spot in Toronto</h2>
+
+<!--Paragraphs-->
+<p class="paragraph">
+    Our pizzeria brings together fresh ingredients and artisanal flair to create a taste sensation that will keep you coming back for more.
+    </p></b>
+
+ <p class="paragraph" id="secparag">
+    We're not just serving pizza; We're crafting experiences<br>
+    <br>
+<!--Include at least one <img /> element to insert a relevant illustration or photograph inside a paragraph in the page with an alt attribute-->
+    <img src="pizza.jpg" alt="Pizza">
+</p></b>
+
+<h3>Create your Own Pizza</h3>
+</header>
+
+
+<!--Step 4: Build a FORM that would allow a visitor to order their pizza(s), including a variety of form controls-->
+
+        <fieldset>
+        <!--Allows user to selcet the number of pizzas-->
+        <label for="Number of pizzas">Number of pizzas</label><br>
+        <input type="number" placeholder="Enter a number"><br>
+        
+        <br>
+        <!--Allows user to selcet the pizza size-->
+        <legend><b>Size</b></legend>
+        <input type="radio" name="Size">
+        <label for="Small - 6 Slices">Small - 6 slices</label><br>
+
+        <input type="radio" name="Size">
+        <label for="Regular - 8 Slices">Regular - 8 Slices</label><br>
+
+        <input type="radio" name="Size">
+        <label for="Large - 10 Slices">Large - 10 Slices</label><br>
+        </fieldset>
+
+
+        <fieldset>
+        <!--Allows user to chose the pizza shape-->
+            <legend><b>Shape</b></legend>
+            <input type="radio" name="Shape">
+            <label for="Round">Round</label>
+
+            <input type="radio" name="Shape">
+            <label for="Square">Square</label><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend><b>Dough, Cheese and Sauce</b></legend><br>
+
+            <!--Allows user to choose one pizza dough-->
+            <legend>Dough</legend>
+            <input type="radio" name="Dough">
+            <label for="Regular Dough">Regular Dough</label>
+
+            <input type="radio" name="Dough">
+            <label for="Thin Crust">Thin Crust</label>
+
+            <input type="radio" name="Dough">
+            <label for="Stuffed Crust">Stuffed Crust</label><br>
+            <br>
+
+            <!--Allows the user to choose one cheese type-->
+            <legend>Cheese</legend>
+            <input type="radio" name="Cheese">
+            <label for="Muzzarela">Muzzarela</label>
+
+            <input type="radio" name="Cheese">
+            <label for="Parmesan">Parmesan</label>
+
+            <input type="radio" name="Cheese">
+            <label for="Feta Chesse">Feta Chese</label><br>
+            <br>
+
+            <!--Allows user to choose one pizza sauce-->
+            <legend>Sauce</legend>
+            <input type="radio" name="Sauce">
+            <label for="Tomato Sauce">Tomato Sauce</label>
+
+            <input type="radio" name="Sauce">
+            <label for="Pesto Sauce">Pesto Sauce</label>
+
+            <input type="radio" name="Sauce">
+            <label for="Garlic Sauce">Garlic Sauce</label>
+        </fieldset>
+
+    
+        <fieldset>
+        <!--Allows user to choose multiple toppings-->
+        <legend><b>Toppings</b></legend><br>
+
+            <article>Veggies</article>
+            <input type="checkbox" value="Spinach">
+            <label for="Toppings">Spinach</label>
+
+            <input type="checkbox" value="Tomatoes">
+            <label for="Toppings">Tomatoes</label>
+
+            <input type="checkbox" value="Green Olives">
+            <label for="Toppings">Green Olives</label>
+
+            <input type="checkbox" value="Kalamata Olives">
+            <label for="Toppings">Kalamata Olives</label>
+
+            <input type="checkbox" value="Red Onions">
+            <label for="Toppings">Red Onions</label>
+
+            <input type="checkbox" value="Pineaple">
+            <label for="Toppings">Pineaple</label><br>
+            
+            <br>
+
+            <article>Meat</article>
+            <input type="checkbox" value="Chicken">
+            <label for="Toppings">Chicken</label>
+
+            <input type="checkbox" value="Bacon Crumble">
+            <label for="Toppings">Bacon Crumble</label>
+
+            <input type="checkbox" value="Salami">
+            <label for="Toppings">Salami</label>
+
+            <input type="checkbox" value="Italian Ham">
+            <label for="Toppings">Italian Ham</label>
+
+            <input type="checkbox" value="Ground Beef">
+            <label for="Toppings">Ground Beef</label>
+
+            <input type="checkbox" value="Sausage">
+            <label for="Toppings">Sausage</label>
+        </fieldset>
+
+
+        <fieldset>
+            <!--Allows the user to choose to Dine in our order Take out-->
+            <legend><b>Dine In or Take Out</b></legend>
+            <input type="radio" name="Dine In or Take Out">
+            <label for="Dine In">Dine In</label>
+
+            <input type="radio" name="Dine In or Take Out">
+            <label for="Take Out">Take Out</label>
+        </fieldset>
+
+
+        <fieldset>
+            <!--Allows the user to input information for order delivery such as name, contact information and address-->
+            <legend><b>Delivery</b></legend>
+            <label for="First Name">First Name</label>
+            <input type="text" placeholder="Enter your First Name">
+
+            <label for="Last Name">Last Name</label>
+            <input type="text" placeholder="Enter your Last Name"><br>
+            
+            <br>
+
+            <label for="Phone Number">Phone Number</label>
+            <input type="number" placeholder="Phone Number">
+            
+
+            <label for="Email address">Email address</label>
+            <input type="email" placeholder="Enter your Email"><br>
+
+            <br>
+
+           
+            <label for="Address">Address</label><br>
+            <input type="text" placeholder="Enter a location"><br>
+
+            <label for="Apartment, unit or floor">Apartment, unit or floor</label><br>
+            <input type="number" placeholder="Apartment, unit or floor"><br>
+
+            <label for="City">City</label><br>
+            <input type="text" placeholder="City"><br>
+
+            <label for="Province">Province</label><br>
+            <input type="text" placeholder="Province"><br>
+        </fieldset>
+
+        <fieldset>
+            <!--Creates buttons - user can select to reset the form or place an order -->
+            <legend><b>Finish Order</b></legend>
+            <button type="button" onclick="alert('Place Order')">Place Order</button>
+            <button type="reset" onclick="alert('Reset Page')">Reset Page</button>
+        </fieldset>
+
+    </main><!--End of main-->
+
+    <footer>
+        <center><small>Copyright Mazieri's Pizzaria</small></center>
+    </footer>
+
+    
+</body><!--End of body-->
+</html> <!--End of html-->
